@@ -1,0 +1,93 @@
+{
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "python.pythonPath": "C:\\Python37\\python.exe",
+    "window.zoomLevel": 0,
+    "files.eol": "\n",
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.visible": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "workbench.colorTheme": "One Dark Pro",
+    "editor.renderControlCharacters": true,
+    "editor.fontSize": 20,
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "terminal.integrated.rendererType": "dom",
+    "editor.lineNumbers": "off",
+    "C_Cpp.loggingLevel": "None",
+    "git.confirmSync": false,
+    "editor.mouseWheelZoom": true,
+    "editor.cursorBlinking": "smooth",
+    "C_Cpp.updateChannel": "Insiders",
+    "workbench.iconTheme": "vscode-icons",
+    "todohighlight.isCaseSensitive": false,
+    "editor.scrollbar.verticalScrollbarSize": 18,
+    "python.autoComplete.addBrackets": true,
+    "todohighlight.keywords": [
+        "done",
+        "tag",
+        {
+            "text": "done",
+            "color": "white",
+            "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
+            "backgroundColor": "rgba(0,255,0)",
+            //other styling properties goes here ... 
+        },
+        {
+            "text": "tag",
+            "color": "white",
+            "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
+            "backgroundColor": "rgba(0,0,255)",
+            //other styling properties goes here ... 
+        }
+    ],
+    "python.dataScience.maxOutputSize": 500,
+    "editor.minimap.enabled": false,
+    "python.linting.pylintArgs": [
+        "--extension-pkg-whitelist=PyQt5"
+    ],
+    "python.formatting.provider": "yapf",
+    "python.formatting.yapfArgs": [
+        "--style",
+        "google"
+    ],
+    "editor.formatOnSave": true,
+    // todo tree settings
+    "todo-tree.regex": "((//|#|<!--|;|/\\*|^)\\s*($TAGS):|^\\s*- \\[ \\])",
+    "todo-tree.tags": [
+        "TODO",
+        "FIXME",
+        "tag",
+        "done"
+    ],
+    "todo-tree.regexCaseSensitive": false,
+    "todo-tree.showInExplorer": true,
+    "todo-tree.defaultHighlight": {
+        "foreground": "white",
+        "background": "yellow",
+        "icon": "check",
+        "rulerColour": "yellow",
+        "type": "tag",
+        "iconColour": "yellow"
+    },
+    "todo-tree.customHighlight": {
+        "todo": {
+            "background": "yellow",
+            "rulerColour": "yellow"
+        },
+        "FIXME": {
+            "background": "red",
+            "icon": "beaker",
+            "rulerColour": "red",
+        },
+        "tag": {
+            "background": "blue",
+            "icon": "tag",
+            "rulerColour": "blue",
+            "rulerLane": "full"
+        },
+        "done": {
+            "background": "green",
+            "icon": "issue-closed",
+            "rulerColour": "green",
+        }
+    }
+}
