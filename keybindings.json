@@ -25,5 +25,39 @@
         "key": "ctrl+space",
         "command": "-editor.action.triggerSuggest",
         "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+    },
+    // {
+    //     "key": "ctrl+t",
+    //     "command": "workbench.action.terminal.sendSequence",
+    //     "args": {
+    //         "text": "echo $(wslpath '${file}')\n"
+    //     }
+    // },
+    // python this file
+    {
+        "key": "ctrl+k ctrl+p",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "python3 $(wslpath '${file}')\n"
+        }
+    },
+    //better align
+    {
+        "key": "ctrl+cmd+=",
+        "command": "wwm.aligncode",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+space",
+        "command": "editor.action.triggerParameterHints",
+        "when": "editorHasSignatureHelpProvider && editorTextFocus"
+    },
+    {
+        "key": "ctrl+k oem_comma",
+        "command": "workbench.action.openSettings"
+    },
+    {
+        "key": "ctrl+oem_comma",
+        "command": "-workbench.action.openSettings"
     }
 ]

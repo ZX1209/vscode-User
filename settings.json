@@ -1,5 +1,6 @@
 {
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    // "terminal.integrated.shell.windows": "C:\\Windows\\System32\\bash.exe",
     "python.pythonPath": "C:\\Python37\\python.exe",
     "window.zoomLevel": 0,
     "files.eol": "\n",
@@ -9,42 +10,39 @@
     "workbench.colorTheme": "One Dark Pro",
     "editor.renderControlCharacters": true,
     "editor.fontSize": 20,
-    "java.errors.incompleteClasspath.severity": "ignore",
+    // "java.errors.incompleteClasspath.severity": "ignore",
     "terminal.integrated.rendererType": "dom",
     "editor.lineNumbers": "off",
     "C_Cpp.loggingLevel": "None",
     "git.confirmSync": false,
     "editor.mouseWheelZoom": true,
-    "editor.cursorBlinking": "smooth",
-    "C_Cpp.updateChannel": "Insiders",
+    // "C_Cpp.updateChannel": "Insiders",
     "workbench.iconTheme": "vscode-icons",
-    "todohighlight.isCaseSensitive": false,
+    // "todohighlight.isCaseSensitive": false,
     "editor.scrollbar.verticalScrollbarSize": 18,
-    "python.autoComplete.addBrackets": true,
-    "todohighlight.keywords": [
-        "done",
-        "tag",
-        {
-            "text": "done",
-            "color": "white",
-            "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
-            "backgroundColor": "rgba(0,255,0)",
-            //other styling properties goes here ... 
-        },
-        {
-            "text": "tag",
-            "color": "white",
-            "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
-            "backgroundColor": "rgba(0,0,255)",
-            //other styling properties goes here ... 
-        }
-    ],
+    // "todohighlight.keywords": [
+    //     "done",
+    //     "tag",
+    //     {
+    //         "text": "done",
+    //         "color": "white",
+    //         "borderRadius": "2px", //NOTE : using borderRadius along with `border` or you will see nothing change
+    //         "backgroundColor": "rgba(0,255,0)",
+    //         //other styling properties goes here ... 
+    //     },
+    //     {
+    //         "text": "tag",
+    //         "color": "white",
+    //         "borderRadius": "2px", //NOTE : using borderRadius along with `border` or you will see nothing change
+    //         "backgroundColor": "rgba(0,0,255)",
+    //         //other styling properties goes here ... 
+    //     }
+    // ],
     "python.dataScience.maxOutputSize": 500,
     "editor.minimap.enabled": false,
     "python.linting.pylintArgs": [
         "--extension-pkg-whitelist=PyQt5"
     ],
-    "python.formatting.provider": "yapf",
     "python.formatting.yapfArgs": [
         "--style",
         "google"
@@ -56,7 +54,8 @@
         "TODO",
         "FIXME",
         "tag",
-        "done"
+        "done",
+        "note"
     ],
     "todo-tree.regexCaseSensitive": false,
     "todo-tree.showInExplorer": true,
@@ -88,6 +87,38 @@
             "background": "green",
             "icon": "issue-closed",
             "rulerColour": "green",
+        },
+        "note": {
+            "background": "#f90",
+            "icon": "note",
+            "rulerColour": "#f90",
         }
-    }
+    },
+    "files.associations": {
+        "*.json": "jsonc"
+    },
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorBlinking": "solid",
+    "window.menuBarVisibility": "default",
+    "python.linting.pep8CategorySeverity.W": "Error",
+    "python.linting.flake8CategorySeverity.W": "Error"
+    // wsl
+    // "saveAndRun": {
+    //     "commands": [
+    //         {
+    //             "match": ".*",
+    //             "isShellCommand": true,
+    //             "cmd": "echo '${file}'",
+    //             "wsl": true
+    //         }
+    //     ]
+    // }
+    ,
+    "editor.fontFamily": "Roboto Mono",
+    "editor.quickSuggestionsDelay": 1,
+    "editor.cursorWidth": 3,
+    "editor.hover.delay": 100,
+    "python.jediEnabled": true,
+    "git.autofetch": true, // important!!!!!!!!!!!!!!!!!!
+    // tag: add vscode setting here
 }
