@@ -17,7 +17,6 @@
     "git.confirmSync": false,
     "editor.mouseWheelZoom": true,
     // "C_Cpp.updateChannel": "Insiders",
-    "workbench.iconTheme": "vscode-icons",
     // "todohighlight.isCaseSensitive": false,
     "editor.scrollbar.verticalScrollbarSize": 18,
     // "todohighlight.keywords": [
@@ -101,24 +100,13 @@
     "editor.cursorBlinking": "solid",
     "window.menuBarVisibility": "default",
     "python.linting.pep8CategorySeverity.W": "Error",
-    "python.linting.flake8CategorySeverity.W": "Error"
-    // wsl
-    // "saveAndRun": {
-    //     "commands": [
-    //         {
-    //             "match": ".*",
-    //             "isShellCommand": true,
-    //             "cmd": "echo '${file}'",
-    //             "wsl": true
-    //         }
-    //     ]
-    // }
-    ,
+    "python.linting.flake8CategorySeverity.W": "Error",
     "editor.fontFamily": "Roboto Mono",
-    "editor.quickSuggestionsDelay": 1,
+    "editor.quickSuggestionsDelay": 0,
     "editor.cursorWidth": 3,
     "editor.hover.delay": 100,
-    "python.jediEnabled": true,
-    "git.autofetch": true, // important!!!!!!!!!!!!!!!!!!
+    "python.jediEnabled": false, // important!!!!!!!!!!!!!!!!!! false
+    "git.autofetch": true,
+    "workbench.iconTheme": "vscode-icons",
     // tag: add vscode setting here
 }
