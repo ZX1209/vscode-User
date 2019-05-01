@@ -249,6 +249,18 @@
 		],
 		"description": "start logging"
 	},
+	"path start": {
+		"scope": "python",
+		"prefix": "path start",
+		"body": [
+			"from pathlib import Path",
+			"",
+			"cwd = Path().cwd()",
+			"filePath = Path().absolute()",
+			"fileDir = filePath.parent"
+		],
+		"description": "start path"
+	},
 	"sqlite3 start": {
 		"scope": "python",
 		"prefix": "sqlite3Starter",
