@@ -261,6 +261,32 @@
 		],
 		"description": "start path"
 	},
+	"vs task start": {
+		"scope": "json",
+		"prefix": "vscode task start",
+		"body": [
+			"{",
+			"// See https://go.microsoft.com/fwlink/?LinkId=733558",
+			"// for the documentation about the tasks.json format",
+			"\"version\": \"2.0.0\",",
+			"\"tasks\": [",
+			"{",
+			"\"label\": \"test task run\",",
+			"\"type\": \"shell\",",
+			"\"command\": \"${file}\",",
+			"\"group\": {",
+			"\"kind\": \"build\",",
+			"\"isDefault\": true",
+			"},",
+			"\"options\": {",
+			"\"cwd\": \"${fileDirname}\"",
+			"}",
+			"}",
+			"]",
+			"}",
+		],
+		"description": "wait for global task"
+	},
 	"sqlite3 start": {
 		"scope": "python",
 		"prefix": "sqlite3Starter",

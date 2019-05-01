@@ -102,4 +102,44 @@
     "python.jediMemoryLimit": 500,
     "markdownlint.run": "onSave",
     // tag: add vscode setting here
+    "launch": {
+        // 使用 IntelliSense 了解相关属性。 
+        // 悬停以查看现有属性的描述。
+        // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "Python: Current File (Integrated Terminal)",
+                "type": "python",
+                "request": "launch",
+                // "program": "$(wslpath '${file}')",
+                "program": "${file}",
+                "console": "integratedTerminal",
+                "cwd": "${fileDirname}"
+            },
+            {
+                "name": "Python: Flask",
+                "type": "python",
+                "request": "launch",
+                "module": "flask",
+                "env": {
+                    "FLASK_APP": "app.py"
+                },
+                "args": [
+                    "run",
+                    "--no-debugger",
+                    "--no-reload"
+                ],
+                "jinja": true
+            },
+            {
+                "name": "Python: Current File (External Terminal)",
+                "type": "python",
+                "request": "launch",
+                "program": "${file}",
+                "console": "externalTerminal",
+                "cwd": "${fileDirname}"
+            }
+        ]
+    }
 }
