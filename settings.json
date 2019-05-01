@@ -7,7 +7,7 @@
     "workbench.statusBar.visible": true,
     "workbench.activityBar.visible": false,
     "editor.multiCursorModifier": "ctrlCmd",
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "One Dark Pro Bold",
     "editor.renderControlCharacters": true,
     "editor.fontSize": 20,
     // "java.errors.incompleteClasspath.severity": "ignore",
@@ -16,27 +16,6 @@
     "C_Cpp.loggingLevel": "None",
     "git.confirmSync": false,
     "editor.mouseWheelZoom": true,
-    // "C_Cpp.updateChannel": "Insiders",
-    // "todohighlight.isCaseSensitive": false,
-    "editor.scrollbar.verticalScrollbarSize": 18,
-    // "todohighlight.keywords": [
-    //     "done",
-    //     "tag",
-    //     {
-    //         "text": "done",
-    //         "color": "white",
-    //         "borderRadius": "2px", //NOTE : using borderRadius along with `border` or you will see nothing change
-    //         "backgroundColor": "rgba(0,255,0)",
-    //         //other styling properties goes here ... 
-    //     },
-    //     {
-    //         "text": "tag",
-    //         "color": "white",
-    //         "borderRadius": "2px", //NOTE : using borderRadius along with `border` or you will see nothing change
-    //         "backgroundColor": "rgba(0,0,255)",
-    //         //other styling properties goes here ... 
-    //     }
-    // ],
     "python.dataScience.maxOutputSize": 500,
     "editor.minimap.enabled": false,
     "python.linting.pylintArgs": [
@@ -69,28 +48,33 @@
     "todo-tree.customHighlight": {
         "todo": {
             "background": "yellow",
-            "rulerColour": "yellow"
+            "rulerColour": "yellow",
+            "iconColour": "yellow"
         },
         "FIXME": {
             "background": "red",
             "icon": "beaker",
             "rulerColour": "red",
+            "iconColour": "red",
         },
         "tag": {
             "background": "blue",
             "icon": "tag",
             "rulerColour": "blue",
+            "iconColour": "blue",
             "rulerLane": "full"
         },
         "done": {
             "background": "green",
             "icon": "issue-closed",
             "rulerColour": "green",
+            "iconColour": "green",
         },
         "note": {
             "background": "#f90",
             "icon": "note",
             "rulerColour": "#f90",
+            "iconColour ": "#f90"
         }
     },
     "files.associations": {
@@ -102,11 +86,20 @@
     "python.linting.pep8CategorySeverity.W": "Error",
     "python.linting.flake8CategorySeverity.W": "Error",
     "editor.fontFamily": "Roboto Mono",
-    "editor.quickSuggestionsDelay": 0,
+    "editor.quickSuggestionsDelay": 1,
     "editor.cursorWidth": 3,
-    "editor.hover.delay": 100,
-    "python.jediEnabled": false, // important!!!!!!!!!!!!!!!!!! false
+    "editor.hover.delay": 100, // important!!!!!!!!!!!!!!!!!! false
     "git.autofetch": true,
     "workbench.iconTheme": "vscode-icons",
+    "python.linting.banditEnabled": true,
+    "python.dataScience.allowImportFromNotebook": false,
+    "python.dataScience.changeDirOnImportExport": false,
+    "python.dataScience.searchForJupyter": false,
+    "python.dataScience.showJupyterVariableExplorer": false,
+    "python.dataScience.useDefaultConfigForJupyter": false,
+    "python.formatting.provider": "yapf",
+    "python.jediPath": "jedi",
+    "python.jediMemoryLimit": 500,
+    "markdownlint.run": "onSave",
     // tag: add vscode setting here
 }
