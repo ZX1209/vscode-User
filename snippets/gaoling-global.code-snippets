@@ -262,7 +262,7 @@
 		"description": "start path"
 	},
 	"vs task start": {
-		"scope": "json",
+		"scope": "jsonc,json",
 		"prefix": "vscode task start",
 		"body": [
 			"{",
@@ -315,7 +315,7 @@
 	},
 	"class function def start": {
 		"scope": "python",
-		"prefix": "class function def",
+		"prefix": "def self",
 		"body": [
 			"def ${1:functionName}(self${2:,argvs}):",
 			"\t\"\"\"${1:functionName}",
