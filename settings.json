@@ -88,7 +88,7 @@
     "editor.fontFamily": "Roboto Mono",
     "editor.quickSuggestionsDelay": 1,
     "editor.cursorWidth": 3,
-    "editor.hover.delay": 100, // important!!!!!!!!!!!!!!!!!! false
+    "editor.hover.delay": 100,
     "git.autofetch": true,
     "workbench.iconTheme": "vscode-icons",
     "python.linting.banditEnabled": true,
@@ -101,6 +101,7 @@
     "python.jediPath": "jedi",
     "python.jediMemoryLimit": 500,
     "markdownlint.run": "onSave",
+    // jedi is good ;jediEnable:True
     // tag: add vscode setting here
     "launch": {
         // 使用 IntelliSense 了解相关属性。 
@@ -141,5 +142,33 @@
                 "cwd": "${fileDirname}"
             }
         ]
-    }
+    },
+    // launch config above useful??
+    "leetcode.endpoint": "leetcode-cn",
+    "leetcode.defaultLanguage": "python3",
+    // leetcode abobe
+    "nimble.timer": {
+        "showReminders": "true",
+        "series": [
+            {
+                "pattern": [
+                    {
+                        "type": "Work",
+                        "time": "25"
+                    },
+                    {
+                        "type": "Break",
+                        "time": "5"
+                    }
+                ],
+                "repeat": "8"
+            }
+        ]
+    },
+    // promo timer above
+    // "cmake.generator": "Visual Studio 15 2017",
+    "cmake.platform": "x64",
+    "cmake.toolset": "host=x64",
+    "cmake.useCMakeServer": false
+    // cmake setting above
 }
