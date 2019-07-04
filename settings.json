@@ -22,8 +22,7 @@
         "--extension-pkg-whitelist=PyQt5"
     ],
     "python.formatting.yapfArgs": [
-        "--style",
-        "google"
+        "--style={ based_on_style: google, column_limit: 80 }"
     ],
     "editor.formatOnSave": true,
     // todo tree settings
@@ -90,8 +89,6 @@
     "editor.cursorWidth": 3,
     "editor.hover.delay": 100,
     "git.autofetch": true,
-    "workbench.iconTheme": "vscode-icons",
-    "python.linting.banditEnabled": true,
     "python.dataScience.allowImportFromNotebook": false,
     "python.dataScience.changeDirOnImportExport": false,
     "python.dataScience.searchForJupyter": false,
@@ -103,47 +100,6 @@
     "markdownlint.run": "onSave",
     // jedi is good ;jediEnable:True
     // tag: add vscode setting here
-    "launch": {
-        // 使用 IntelliSense 了解相关属性。 
-        // 悬停以查看现有属性的描述。
-        // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
-        "version": "0.2.0",
-        "configurations": [
-            {
-                "name": "Python: Current File (Integrated Terminal)",
-                "type": "python",
-                "request": "launch",
-                // "program": "$(wslpath '${file}')",
-                "program": "${file}",
-                "console": "integratedTerminal",
-                "cwd": "${fileDirname}"
-            },
-            {
-                "name": "Python: Flask",
-                "type": "python",
-                "request": "launch",
-                "module": "flask",
-                "env": {
-                    "FLASK_APP": "app.py"
-                },
-                "args": [
-                    "run",
-                    "--no-debugger",
-                    "--no-reload"
-                ],
-                "jinja": true
-            },
-            {
-                "name": "Python: Current File (External Terminal)",
-                "type": "python",
-                "request": "launch",
-                "program": "${file}",
-                "console": "externalTerminal",
-                "cwd": "${fileDirname}"
-            }
-        ]
-    },
-    // launch config above useful??
     "leetcode.endpoint": "leetcode-cn",
     "leetcode.defaultLanguage": "python3",
     // leetcode abobe
@@ -166,9 +122,35 @@
         ]
     },
     // promo timer above
-    // "cmake.generator": "Visual Studio 15 2017",
+    "cmake.generator": "Visual Studio 14 2015",
     "cmake.platform": "x64",
     "cmake.toolset": "host=x64",
-    "cmake.useCMakeServer": false
+    "cmake.useCMakeServer": false,
     // cmake setting above
+    "workbench.colorCustomizations": {
+        "tab.activeBackground": "#f1e75369",
+        "editorCursor.foreground": "#ebee3b"
+    },
+    // customiz color theme above
+    "editor.tokenColorCustomizations": {
+        // "functions": "#FF0000",
+        // "comments": "#FF0000",
+        // "variables": "bule",
+        // "types": "#FF0000",
+        // "textMateRules": [],
+        // "strings": "#FF0000",
+        // "numbers": "#FF0000",
+        // "keywords": "#FF0000",
+    },
+    "python.linting.pep8Enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": false,
+    "dart.flutterSdkPath": "C:\\flutter",
+    "dart.flutterCreateAndroidLanguage": "kotlin",
+    "workbench.iconTheme": "vscode-icons",
+    "breadcrumbs.enabled": false,
+    "breadcrumbs.symbolPath": "off",
+    // customized syntax color
+    "editor.glyphMargin": false,
+    "workbench.tree.renderIndentGuides": "always"
 }

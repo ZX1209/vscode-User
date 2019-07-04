@@ -15,6 +15,14 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
+	"python for loop": {
+		"scope": "python",
+		"prefix": "for i",
+		"body": [
+			"for i in range(${1}):",
+			"    ${0:pass}"
+		]
+	},
 	"pyopengl start": {
 		"scope": "python",
 		"prefix": "pyopengl start",
@@ -244,6 +252,7 @@
 		"prefix": "log start",
 		"body": [
 			"import logging as log",
+			"",
 			"log.basicConfig(level=log.DEBUG)",
 			"log.debug('this is a demo massage')"
 		],
@@ -255,7 +264,7 @@
 		"body": [
 			"from pathlib import Path",
 			"",
-			"cwd = Path().cwd()",
+			"curDir = Path().cwd()",
 			"filePath = Path().absolute()",
 			"fileDir = filePath.parent"
 		],
@@ -304,7 +313,7 @@
 	},
 	"def start": {
 		"scope": "python",
-		"prefix": "def",
+		"prefix": "def func",
 		"body": [
 			"def ${1:functionName}(${2:argvs}):",
 			"\t\"\"\"${1:functionName}",
