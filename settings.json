@@ -152,5 +152,11 @@
     "breadcrumbs.symbolPath": "off",
     // customized syntax color
     "editor.glyphMargin": false,
-    "workbench.tree.renderIndentGuides": "always"
+    "workbench.tree.renderIndentGuides": "always",
+    "autoDocstring.includeName": true,
+    "autoDocstring.docstringFormat": "google",
+    // tabnine setting
+    "tabnine.disable_file_regex": [
+        "*.md"
+    ]
 }
