@@ -133,5 +133,9 @@
         "key": "ctrl+f5",
         "command": "-flutter.hotReload",
         "when": "dart-code:anyFlutterProjectLoaded && dart-code:service.reloadSources && inDebugMode"
+    },
+    {
+        "key": "alt+oem_3",
+        "command": "workbench.action.toggleMaximizedPanel"
     }
 ]
