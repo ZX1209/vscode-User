@@ -26,17 +26,17 @@
     ],
     "editor.formatOnSave": true,
     // todo tree settings
-    "todo-tree.regex": "((//|#|<!--|;|/\\*|^)\\s*($TAGS):|^\\s*- \\[ \\])",
-    "todo-tree.tags": [
+    "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|^)\\s*($TAGS):|^\\s*- \\[ \\])",
+    "todo-tree.general.tags": [
         "TODO",
         "FIXME",
         "tag",
         "done",
         "note"
     ],
-    "todo-tree.regexCaseSensitive": false,
-    "todo-tree.showInExplorer": true,
-    "todo-tree.defaultHighlight": {
+    "todo-tree.regex.regexCaseSensitive": false,
+    "todo-tree.tree.showInExplorer": true,
+    "todo-tree.highlights.defaultHighlight": {
         "foreground": "white",
         "background": "yellow",
         "icon": "check",
@@ -44,7 +44,7 @@
         "type": "tag",
         "iconColour": "yellow"
     },
-    "todo-tree.customHighlight": {
+    "todo-tree.highlights.customHighlight": {
         "todo": {
             "background": "yellow",
             "rulerColour": "yellow",
@@ -158,5 +158,6 @@
     // tabnine setting
     "tabnine.disable_file_regex": [
         "*.md"
-    ]
+    ],
+    "C_Cpp.default.intelliSenseMode": "gcc-x64",
 }
