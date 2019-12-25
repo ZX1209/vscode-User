@@ -1,5 +1,5 @@
 {
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",
     // "terminal.integrated.shell.windows": "C:\\Windows\\System32\\bash.exe",
     "python.pythonPath": "C:\\Python37\\python.exe",
     "window.zoomLevel": 0,
@@ -7,7 +7,7 @@
     "workbench.statusBar.visible": true,
     "workbench.activityBar.visible": false,
     "editor.multiCursorModifier": "ctrlCmd",
-    "workbench.colorTheme": "One Dark Pro Bold",
+    "workbench.colorTheme": "One Dark Pro",
     "editor.renderControlCharacters": true,
     "editor.fontSize": 20,
     // "java.errors.incompleteClasspath.severity": "ignore",
@@ -82,7 +82,7 @@
     "editor.cursorSmoothCaretAnimation": true,
     "editor.cursorBlinking": "solid",
     "window.menuBarVisibility": "default",
-    "python.linting.pep8CategorySeverity.W": "Error",
+    "python.linting.pycodestyleCategorySeverity.W": "Error",
     "python.linting.flake8CategorySeverity.W": "Error",
     "editor.fontFamily": "Roboto Mono",
     "editor.quickSuggestionsDelay": 1,
@@ -142,7 +142,7 @@
         // "numbers": "#FF0000",
         // "keywords": "#FF0000",
     },
-    "python.linting.pep8Enabled": true,
+    "python.linting.pycodestyleEnabled": true,
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
     "dart.flutterSdkPath": "C:\\flutter",
@@ -160,4 +160,20 @@
         "*.md"
     ],
     "C_Cpp.default.intelliSenseMode": "gcc-x64",
+    "oneDarkPro.editorTheme": "Onedark Pro",
+    "oneDarkPro.vivid": true,
+    "oneDarkPro.italic": false,
+    "oneDarkPro.bold": true,
+    "leetcode.filePath": {
+        "default": {
+            // relative folder path
+            "folder": "./",
+            // file name
+            "filename": "leetcode-${id}-${name}-${tag}-${difficulty}.${ext}"
+        }
+    },
+    "leetcode.workspaceFolder": "c:\\Users\\14049\\WordAndStudy\\Projects\\algorithm-practise\\gl-algorithm-practise\\leetcode-gl-python",
+    "leetcode.hint.configWebviewMarkdown": false,
+    "leetcode.showCommentDescription": true,
+    "leetcode.hint.commandShortcut": false
 }
