@@ -423,5 +423,16 @@
 			"    return jsonify(tmp)",
 		],
 		"description": "restFull api flask snippet"
-	}
+	},
+	"leetcode test solution": {
+		"scope": "python",
+		"prefix": "solution",
+		"body": [
+			"if __name__ == \"__main__\":",
+			"    # datas",
+			"    ",
+			"    test = Solution()",
+			"    print(test.func())"
+		]
+	},
 }

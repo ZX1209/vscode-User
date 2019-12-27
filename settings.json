@@ -5,7 +5,7 @@
     "window.zoomLevel": 0,
     "files.eol": "\n",
     "workbench.statusBar.visible": true,
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.visible": false, //最左边的导航?栏 文件 扩展
     "editor.multiCursorModifier": "ctrlCmd",
     "workbench.colorTheme": "One Dark Pro",
     "editor.renderControlCharacters": true,
@@ -151,7 +151,7 @@
     "breadcrumbs.enabled": false,
     "breadcrumbs.symbolPath": "off",
     // customized syntax color
-    "editor.glyphMargin": false,
+    "editor.glyphMargin": true, // 编辑器侧边(断点)部分
     "workbench.tree.renderIndentGuides": "always",
     "autoDocstring.includeName": true,
     "autoDocstring.docstringFormat": "google",
@@ -175,5 +175,7 @@
     "leetcode.workspaceFolder": "c:\\Users\\14049\\WordAndStudy\\Projects\\algorithm-practise\\gl-algorithm-practise\\leetcode-gl-python",
     "leetcode.hint.configWebviewMarkdown": false,
     "leetcode.showCommentDescription": true,
-    "leetcode.hint.commandShortcut": false
+    "leetcode.hint.commandShortcut": false,
+    "debug.allowBreakpointsEverywhere": true,
+    "bookmarks.saveBookmarksInProject": true
 }
