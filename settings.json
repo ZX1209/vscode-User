@@ -1,8 +1,8 @@
 {
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",
+    // "terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",
     // "terminal.integrated.shell.windows": "C:\\Windows\\System32\\bash.exe",
-    "python.pythonPath": "C:\\Python37\\python.exe",
-    "window.zoomLevel": 0,
+    // "python.pythonPath": "C:\\Python37\\python.exe",
+    "window.zoomLevel": 1,
     "files.eol": "\n",
     "workbench.statusBar.visible": true,
     "workbench.activityBar.visible": false, //最左边的导航?栏 文件 扩展
@@ -172,10 +172,15 @@
             "filename": "leetcode-${id}-${name}-${tag}-${difficulty}.${ext}"
         }
     },
-    "leetcode.workspaceFolder": "c:\\Users\\14049\\WordAndStudy\\Projects\\algorithm-practise\\gl-algorithm-practise\\leetcode-gl-python",
+    "leetcode.workspaceFolder": "/home/gl/Projects/algorithm-practise/gl-algorithm-practise/leetcode-gl-python/",
     "leetcode.hint.configWebviewMarkdown": false,
     "leetcode.showCommentDescription": true,
     "leetcode.hint.commandShortcut": false,
     "debug.allowBreakpointsEverywhere": true,
-    "bookmarks.saveBookmarksInProject": true
+    "bookmarks.saveBookmarksInProject": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": true,
+    // "terminal.integrated.fontFamily": "Roboto Mono"
+    "python.jediPath":"/usr/lib/python3/dist-packages/jedi"
 }
