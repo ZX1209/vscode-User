@@ -1,4 +1,13 @@
 {
+    // mermain markdown
+    "markdown-preview-enhanced.enableScriptExecution": true,
+    "markdown-preview-enhanced.mermaidTheme": "forest",
+    "markdown.preview.doubleClickToSwitchToEditor": false,
+    "markdown-preview-enhanced.previewTheme": "newsprint.css",
+    "markdown-preview-enhanced.enableExtendedTableSyntax": true,
+    "markdown-preview-enhanced.enableTypographer": true,
+    "markdown.extension.toc.orderedList": true,
+    "markdown.extension.orderedList.autoRenumber": false,
     // "terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",
     // "terminal.integrated.shell.windows": "C:\\Windows\\System32\\bash.exe",
     // "python.pythonPath": "C:\\Python37\\python.exe",
@@ -24,7 +33,6 @@
     "python.formatting.yapfArgs": [
         "--style={ based_on_style: google, column_limit: 80 }"
     ],
-    "editor.formatOnSave": true,
     // todo tree settings
     "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|^)\\s*($TAGS):|^\\s*- \\[ \\])",
     "todo-tree.general.tags": [
@@ -182,5 +190,8 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "python.jediEnabled": true,
     // "terminal.integrated.fontFamily": "Roboto Mono"
-    "python.jediPath":"/usr/lib/python3/dist-packages/jedi"
+    "python.jediPath": "/usr/lib/python3/dist-packages/jedi",
+    "editor.formatOnSave": true,
+    "python.formatting.yapfPath": "/home/gl/.local/bin/yapf",
+    "latex-workshop.view.pdf.viewer": "tab"
 }
