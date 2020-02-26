@@ -11,7 +11,7 @@
     // "terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",
     // "terminal.integrated.shell.windows": "C:\\Windows\\System32\\bash.exe",
     // "python.pythonPath": "C:\\Python37\\python.exe",
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "files.eol": "\n",
     "workbench.statusBar.visible": true,
     "workbench.activityBar.visible": false, //最左边的导航?栏 文件 扩展
@@ -31,7 +31,7 @@
         "--extension-pkg-whitelist=PyQt5"
     ],
     "python.formatting.yapfArgs": [
-        "--style={ based_on_style: google, column_limit: 80 }"
+        "--style={ based_on_style: google, column_limit: 110 }"
     ],
     // todo tree settings
     "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|^)\\s*($TAGS):|^\\s*- \\[ \\])",
@@ -93,17 +93,16 @@
     "python.linting.pycodestyleCategorySeverity.W": "Error",
     "python.linting.flake8CategorySeverity.W": "Error",
     "editor.fontFamily": "Roboto Mono",
-    "editor.quickSuggestionsDelay": 1,
+    "editor.quickSuggestionsDelay": 300,
     "editor.cursorWidth": 3,
     "editor.hover.delay": 100,
     "git.autofetch": true,
     "python.dataScience.allowImportFromNotebook": false,
     "python.dataScience.changeDirOnImportExport": false,
-    "python.dataScience.searchForJupyter": false,
     "python.dataScience.showJupyterVariableExplorer": false,
     "python.dataScience.useDefaultConfigForJupyter": false,
-    "python.formatting.provider": "yapf",
-    "python.jediPath": "jedi",
+    "python.formatting.provider": "black",
+    "python.jediPath": "/home/gl/.local/lib/python3.7/site-packages/jedi",
     "python.jediMemoryLimit": 500,
     "markdownlint.run": "onSave",
     // jedi is good ;jediEnable:True
@@ -150,8 +149,6 @@
         // "numbers": "#FF0000",
         // "keywords": "#FF0000",
     },
-    "python.linting.pycodestyleEnabled": true,
-    "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
     "dart.flutterSdkPath": "C:\\flutter",
     "dart.flutterCreateAndroidLanguage": "kotlin",
@@ -186,12 +183,28 @@
     "leetcode.hint.commandShortcut": false,
     "debug.allowBreakpointsEverywhere": true,
     "bookmarks.saveBookmarksInProject": true,
-    "editor.suggestSelection": "first",
+    "editor.suggestSelection": "recentlyUsedByPrefix",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "python.jediEnabled": true,
     // "terminal.integrated.fontFamily": "Roboto Mono"
     "python.jediPath": "/usr/lib/python3/dist-packages/jedi",
     "editor.formatOnSave": true,
     "python.formatting.yapfPath": "/home/gl/.local/bin/yapf",
-    "latex-workshop.view.pdf.viewer": "tab"
+    "latex-workshop.view.pdf.viewer": "tab",
+    "python.linting.pylintCategorySeverity.warning": "Error",
+    "dart.debugExternalLibraries": true,
+    "dart.debugSdkLibraries": true,
+    "dart.enableCompletionCommitCharacters": true,
+    "dart.flutterHotRestartOnSave": true,
+    "dart.lineLength": 120,
+    "dart.previewFlutterUiGuides": true,
+    "dart.triggerSignatureHelpAutomatically": true,
+    "python.autoComplete.addBrackets": true,
+    "python.autoComplete.extraPaths": [
+        "/home/gl/.local/lib/python3.7/site-packages"
+    ],
+    "python.formatting.blackArgs": [
+        "--line-length=90"
+    ],
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
 }

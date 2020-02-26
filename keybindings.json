@@ -187,5 +187,15 @@
         "key": "ctrl+shift+oem_4",
         "command": "-editor.fold",
         "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "shift+alt+f1",
+        "command": "editor.action.showAccessibilityHelp",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+f1",
+        "command": "-editor.action.showAccessibilityHelp",
+        "when": "editorFocus"
     }
 ]
