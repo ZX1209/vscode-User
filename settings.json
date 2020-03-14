@@ -207,4 +207,6 @@
         "--line-length=90"
     ],
     "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "todo-tree.tree.showScanModeButton": false,
+    "remote.SSH.showLoginTerminal": true,
 }
