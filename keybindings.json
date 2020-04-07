@@ -197,5 +197,13 @@
         "key": "alt+f1",
         "command": "-editor.action.showAccessibilityHelp",
         "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+alt+q",
+        "command": "qtForPython.editTranslation"
+    },
+    {
+        "key": "alt+q",
+        "command": "qtForPython.editForm"
     }
 ]

@@ -16,12 +16,12 @@
     "workbench.statusBar.visible": true,
     "workbench.activityBar.visible": false, //最左边的导航?栏 文件 扩展
     "editor.multiCursorModifier": "ctrlCmd",
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "One Dark Flatland Monokai",
     "editor.renderControlCharacters": true,
     "editor.fontSize": 20,
     // "java.errors.incompleteClasspath.severity": "ignore",
     "terminal.integrated.rendererType": "dom",
-    "editor.lineNumbers": "off",
+    "editor.lineNumbers": "on",
     "C_Cpp.loggingLevel": "None",
     "git.confirmSync": false,
     "editor.mouseWheelZoom": true,
@@ -93,13 +93,13 @@
     "python.linting.pycodestyleCategorySeverity.W": "Error",
     "python.linting.flake8CategorySeverity.W": "Error",
     "editor.fontFamily": "Roboto Mono",
-    "editor.quickSuggestionsDelay": 300,
+    "editor.quickSuggestionsDelay": 100,
     "editor.cursorWidth": 3,
     "editor.hover.delay": 100,
     "git.autofetch": true,
     "python.dataScience.allowImportFromNotebook": false,
     "python.dataScience.changeDirOnImportExport": false,
-    "python.dataScience.showJupyterVariableExplorer": false,
+    // "python.dataScience.showJupyterVariableExplorer": false,
     "python.dataScience.useDefaultConfigForJupyter": false,
     "python.formatting.provider": "black",
     "python.jediPath": "/home/gl/.local/lib/python3.7/site-packages/jedi",
@@ -136,18 +136,55 @@
     // cmake setting above
     "workbench.colorCustomizations": {
         "tab.activeBackground": "#f1e75369",
-        "editorCursor.foreground": "#ebee3b"
+        "editorCursor.foreground": "#ebee3b",
+        "activityBarBadge.background": "#FF7042",
+        "activityBar.activeBorder": "#FF7042",
+        "list.activeSelectionForeground": "#FF7042",
+        "list.inactiveSelectionForeground": "#FF7042",
+        "list.highlightForeground": "#FF7042",
+        "scrollbarSlider.activeBackground": "#FF704250",
+        "editorSuggestWidget.highlightForeground": "#FF7042",
+        "textLink.foreground": "#FF7042",
+        "progressBar.background": "#FF7042",
+        "pickerGroup.foreground": "#FF7042",
+        "tab.activeBorder": "#FF7042",
+        "notificationLink.foreground": "#FF7042",
+        "editorWidget.resizeBorder": "#FF7042",
+        "editorWidget.border": "#FF7042",
+        "settings.modifiedItemIndicator": "#FF7042",
+        "settings.headerForeground": "#FF7042",
+        "panelTitle.activeBorder": "#FF7042",
+        "breadcrumb.activeSelectionForeground": "#FF7042",
+        "menu.selectionForeground": "#FF7042",
+        "menubar.selectionForeground": "#FF7042",
+        "editor.findMatchBorder": "#FF7042",
+        "selection.background": "#FF704240"
     },
     // customiz color theme above
     "editor.tokenColorCustomizations": {
         // "functions": "#FF0000",
         // "comments": "#FF0000",
-        // "variables": "bule",
+        "variables": "#FF0000",
         // "types": "#FF0000",
         // "textMateRules": [],
         // "strings": "#FF0000",
         // "numbers": "#FF0000",
-        // "keywords": "#FF0000",
+        "keywords": "#ff5e00",
+        "textMateRules": [
+            {
+                "scope": "entity.name.type.class.python",
+                "settings": {
+                    "foreground": "#FF0000",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "support.variable.magic.python",
+                "settings": {
+                    "foreground": "#ffffff"
+                }
+            }
+        ]
     },
     "python.linting.pylintEnabled": false,
     "dart.flutterSdkPath": "C:\\flutter",
@@ -181,13 +218,12 @@
     "leetcode.hint.configWebviewMarkdown": false,
     "leetcode.showCommentDescription": true,
     "leetcode.hint.commandShortcut": false,
-    "debug.allowBreakpointsEverywhere": true,
     "bookmarks.saveBookmarksInProject": true,
     "editor.suggestSelection": "recentlyUsedByPrefix",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "python.jediEnabled": true,
     // "terminal.integrated.fontFamily": "Roboto Mono"
-    "python.jediPath": "/usr/lib/python3/dist-packages/jedi",
+    // "python.jediPath": "/usr/lib/python3/dist-packages/jedi",
     "editor.formatOnSave": true,
     "python.formatting.yapfPath": "/home/gl/.local/bin/yapf",
     "latex-workshop.view.pdf.viewer": "tab",
@@ -209,4 +245,21 @@
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "todo-tree.tree.showScanModeButton": false,
     "remote.SSH.showLoginTerminal": true,
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "vue-html": "html",
+        "razor": "html",
+        "plaintext": "jade"
+    },
+    "vsicons.presets.hideFolders": true,
+    "dart.openDevTools": "flutter",
+    "workbench.preferredDarkColorTheme": "One Monokai",
+    // "workbench.colorCustomizations": {
+    //     "editor.selectionBackground": "#ff78393a", //Current SELECTED text
+    //     // "editor.selectionHighlightBackground": "#ff000071", //same content as the selection
+    //     // "editor.findMatchBackground": "#00cc44a8", //Current SEARCH MATCH
+    //     // "editor.findMatchHighlightBackground": "#ff7b00a1" //Other SEARCH MATCHES
+    //     "editor.selectionHighlightBorder": "#ff5100"
+    // }
 }
