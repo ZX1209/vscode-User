@@ -255,6 +255,40 @@
     "vsicons.presets.hideFolders": true,
     "dart.openDevTools": "flutter",
     "workbench.preferredDarkColorTheme": "One Monokai",
+    "python.dataScience.sendSelectionToInteractiveWindow": false,
+    "explorer.confirmDragAndDrop": false,
+    "hediet.vscode-drawio.local-storage": {
+        ".drawio-config": {
+            "language": "",
+            "customFonts": [],
+            "libraries": "general;uml;er;bpmn;flowchart;basic;arrows2",
+            "customLibraries": [
+                "L.scratchpad"
+            ],
+            "plugins": [],
+            "recentColors": [],
+            "formatWidth": 240,
+            "createTarget": false,
+            "pageFormat": {
+                "x": 0,
+                "y": 0,
+                "width": 827,
+                "height": 1169
+            },
+            "search": true,
+            "showStartScreen": true,
+            "gridColor": "#d0d0d0",
+            "darkGridColor": "#6e6e6e",
+            "autosave": true,
+            "resizeImages": null,
+            "openCounter": 0,
+            "version": 18,
+            "unit": 1,
+            "isRulerOn": false,
+            "ui": ""
+        }
+    },
+    "python.formatting.blackPath": "~/.local/bin/black",
     // "workbench.colorCustomizations": {
     //     "editor.selectionBackground": "#ff78393a", //Current SELECTED text
     //     // "editor.selectionHighlightBackground": "#ff000071", //same content as the selection

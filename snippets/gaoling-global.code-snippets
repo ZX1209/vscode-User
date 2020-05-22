@@ -263,10 +263,12 @@
 		"prefix": "path start",
 		"body": [
 			"from pathlib import Path",
+			"import os",
 			"",
-			"curDir = Path().cwd()",
-			"filePath = Path().absolute()",
-			"fileDir = filePath.parent"
+			"file_path = Path(__file__).absolute()",
+			"file_dir_path = file_path.parent",
+			"original_working_path = Path('./').absolate()",
+			"os.chdir(file_dir_path)"
 		],
 		"description": "start path"
 	},
