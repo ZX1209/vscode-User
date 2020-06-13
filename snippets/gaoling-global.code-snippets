@@ -267,7 +267,7 @@
 			"",
 			"file_path = Path(__file__).absolute()",
 			"file_dir_path = file_path.parent",
-			"original_working_path = Path('./').absolate()",
+			"original_working_path = Path('./').absolute()",
 			"os.chdir(file_dir_path)"
 		],
 		"description": "start path"

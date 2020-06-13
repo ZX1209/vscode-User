@@ -11,15 +11,16 @@
     // "terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",
     // "terminal.integrated.shell.windows": "C:\\Windows\\System32\\bash.exe",
     // "python.pythonPath": "C:\\Python37\\python.exe",
+    "python.pythonPath": "/usr/bin/python3.7",
     "window.zoomLevel": 0,
     "files.eol": "\n",
     "workbench.statusBar.visible": true,
     "workbench.activityBar.visible": false, //最左边的导航?栏 文件 扩展
     "editor.multiCursorModifier": "ctrlCmd",
-    "workbench.colorTheme": "One Dark Flatland Monokai",
+    "workbench.colorTheme": "One Dark Pro",
     "editor.renderControlCharacters": true,
     "editor.fontSize": 20,
-    // "java.errors.incompleteClasspath.severity": "ignore",
+    // "java.errors.incompleteCla.severity": "ignore",
     "terminal.integrated.rendererType": "dom",
     "editor.lineNumbers": "on",
     "C_Cpp.loggingLevel": "None",
@@ -97,42 +98,43 @@
     "editor.cursorWidth": 3,
     "editor.hover.delay": 100,
     "git.autofetch": true,
-    "python.dataScience.allowImportFromNotebook": false,
-    "python.dataScience.changeDirOnImportExport": false,
+    // "python.dataScience.allowImportFromNotebook": false,
+    // "python.dataScience.changeDirOnImportExport": false,
     // "python.dataScience.showJupyterVariableExplorer": false,
-    "python.dataScience.useDefaultConfigForJupyter": false,
+    // "python.dataScience.useDefaultConfigForJupyter": false,
     "python.formatting.provider": "black",
-    "python.jediPath": "/home/gl/.local/lib/python3.7/site-packages/jedi",
-    "python.jediMemoryLimit": 500,
-    "markdownlint.run": "onSave",
+    // "python.jediPath": "/home/gl/.local/lib/python3.7/site-packages",
+    // jedi path error ???don know why????????
+    // "markdownlint.run": "onSave",
     // jedi is good ;jediEnable:True
+    "python.jediEnabled": true,
     // tag: add vscode setting here
     "leetcode.endpoint": "leetcode-cn",
     "leetcode.defaultLanguage": "python3",
     // leetcode abobe
-    "nimble.timer": {
-        "showReminders": "true",
-        "series": [
-            {
-                "pattern": [
-                    {
-                        "type": "Work",
-                        "time": "25"
-                    },
-                    {
-                        "type": "Break",
-                        "time": "5"
-                    }
-                ],
-                "repeat": "8"
-            }
-        ]
-    },
+    // "nimble.timer": {
+    //     "showReminders": "true",
+    //     "series": [
+    //         {
+    //             "pattern": [
+    //                 {
+    //                     "type": "Work",
+    //                     "time": "25"
+    //                 },
+    //                 {
+    //                     "type": "Break",
+    //                     "time": "5"
+    //                 }
+    //             ],
+    //             "repeat": "8"
+    //         }
+    //     ]
+    // },
     // promo timer above
-    "cmake.generator": "Visual Studio 14 2015",
-    "cmake.platform": "x64",
-    "cmake.toolset": "host=x64",
-    "cmake.useCMakeServer": false,
+    // "cmake.generator": "Visual Studio 14 2015",
+    // "cmake.platform": "x64",
+    // "cmake.toolset": "host=x64",
+    // "cmake.useCMakeServer": false,
     // cmake setting above
     "workbench.colorCustomizations": {
         "tab.activeBackground": "#f1e75369",
@@ -161,33 +163,33 @@
         "selection.background": "#FF704240"
     },
     // customiz color theme above
-    "editor.tokenColorCustomizations": {
-        // "functions": "#FF0000",
-        // "comments": "#FF0000",
-        "variables": "#FF0000",
-        // "types": "#FF0000",
-        // "textMateRules": [],
-        // "strings": "#FF0000",
-        // "numbers": "#FF0000",
-        "keywords": "#ff5e00",
-        "textMateRules": [
-            {
-                "scope": "entity.name.type.class.python",
-                "settings": {
-                    "foreground": "#FF0000",
-                    "fontStyle": ""
-                }
-            },
-            {
-                "scope": "support.variable.magic.python",
-                "settings": {
-                    "foreground": "#ffffff"
-                }
-            }
-        ]
-    },
+    // "editor.tokenColorCustomizations": {
+    //     // "functions": "#FF0000",
+    //     // "comments": "#FF0000",
+    //     "variables": "#FF0000",
+    //     // "types": "#FF0000",
+    //     // "textMateRules": [],
+    //     // "strings": "#FF0000",
+    //     // "numbers": "#FF0000",
+    //     "keywords": "#ff5e00",
+    //     "textMateRules": [
+    //         {
+    //             "scope": "entity.name.type.class.python",
+    //             "settings": {
+    //                 "foreground": "#FF0000",
+    //                 "fontStyle": ""
+    //             }
+    //         },
+    //         {
+    //             "scope": "support.variable.magic.python",
+    //             "settings": {
+    //                 "foreground": "#ffffff"
+    //             }
+    //         }
+    //     ]
+    // },
     "python.linting.pylintEnabled": false,
-    "dart.flutterSdkPath": "C:\\flutter",
+    // "dart.flutterSdkPath": "C:\\flutter",
     "dart.flutterCreateAndroidLanguage": "kotlin",
     "workbench.iconTheme": "vscode-icons",
     "breadcrumbs.enabled": false,
@@ -198,10 +200,10 @@
     "autoDocstring.includeName": true,
     "autoDocstring.docstringFormat": "google",
     // tabnine setting
-    "tabnine.disable_file_regex": [
-        "*.md"
-    ],
-    "C_Cpp.default.intelliSenseMode": "gcc-x64",
+    // "tabnine.disable_file_regex": [
+    //     "*.md"
+    // ],
+    // "C_Cpp.default.intelliSenseMode": "gcc-x64",
     "oneDarkPro.editorTheme": "Onedark Pro",
     "oneDarkPro.vivid": true,
     "oneDarkPro.italic": false,
@@ -216,29 +218,28 @@
     },
     "leetcode.workspaceFolder": "/home/gl/Projects/algorithm-practise/gl-algorithm-practise/leetcode-gl-python/",
     "leetcode.hint.configWebviewMarkdown": false,
-    "leetcode.showCommentDescription": true,
+    // "leetcode.showCommentDescription": true,
     "leetcode.hint.commandShortcut": false,
     "bookmarks.saveBookmarksInProject": true,
     "editor.suggestSelection": "recentlyUsedByPrefix",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "python.jediEnabled": true,
     // "terminal.integrated.fontFamily": "Roboto Mono"
     // "python.jediPath": "/usr/lib/python3/dist-packages/jedi",
     "editor.formatOnSave": true,
     "python.formatting.yapfPath": "/home/gl/.local/bin/yapf",
     "latex-workshop.view.pdf.viewer": "tab",
     "python.linting.pylintCategorySeverity.warning": "Error",
-    "dart.debugExternalLibraries": true,
-    "dart.debugSdkLibraries": true,
+    "dart.debugExternalLibraries": false,
+    "dart.debugSdkLibraries": false,
     "dart.enableCompletionCommitCharacters": true,
     "dart.flutterHotRestartOnSave": true,
     "dart.lineLength": 120,
     "dart.previewFlutterUiGuides": true,
     "dart.triggerSignatureHelpAutomatically": true,
     "python.autoComplete.addBrackets": true,
-    "python.autoComplete.extraPaths": [
-        "/home/gl/.local/lib/python3.7/site-packages"
-    ],
+    // "python.autoComplete.extraPaths": [
+    //     "/home/gl/CloudStudio/bin/clara",
+    //     "/home/gl/.local/lib/python3.7/site-packages"
+    // ],
     "python.formatting.blackArgs": [
         "--line-length=90"
     ],
@@ -254,8 +255,8 @@
     },
     "vsicons.presets.hideFolders": true,
     "dart.openDevTools": "flutter",
-    "workbench.preferredDarkColorTheme": "One Monokai",
-    "python.dataScience.sendSelectionToInteractiveWindow": false,
+    // "workbench.preferredDarkColorTheme": "One Monokai",
+    // "python.dataScience.sendSelectionToInteractiveWindow": false,
     "explorer.confirmDragAndDrop": false,
     "hediet.vscode-drawio.local-storage": {
         ".drawio-config": {
@@ -288,12 +289,9 @@
             "ui": ""
         }
     },
-    "python.formatting.blackPath": "~/.local/bin/black",
-    // "workbench.colorCustomizations": {
-    //     "editor.selectionBackground": "#ff78393a", //Current SELECTED text
-    //     // "editor.selectionHighlightBackground": "#ff000071", //same content as the selection
-    //     // "editor.findMatchBackground": "#00cc44a8", //Current SEARCH MATCH
-    //     // "editor.findMatchHighlightBackground": "#ff7b00a1" //Other SEARCH MATCHES
-    //     "editor.selectionHighlightBorder": "#ff5100"
-    // }
+    "python.formatting.blackPath": "/home/gl/.local/bin/black",
+    "http.proxySupport": "off",
+    "[python]": {
+        "editor.quickSuggestions": true,
+    }
 }
