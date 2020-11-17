@@ -1,0 +1,9 @@
+{
+	"edge": {
+		"prefix": "edge",
+		"body": [
+			"EdgeInsets.all(8)"
+		],
+		"description": "edge"
+	}
+}
