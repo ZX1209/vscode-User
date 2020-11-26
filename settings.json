@@ -7,7 +7,6 @@
     "markdown-preview-enhanced.enableExtendedTableSyntax": true,
     "markdown-preview-enhanced.enableTypographer": true,
     "markdown.extension.toc.orderedList": true,
-    "markdown.extension.orderedList.autoRenumber": false,
     // "terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",
     // "terminal.integrated.shell.windows": "C:\\Windows\\System32\\bash.exe",
     // "python.pythonPath": "C:\\Python37\\python.exe",
@@ -26,7 +25,6 @@
     "C_Cpp.loggingLevel": "None",
     "git.confirmSync": false,
     "editor.mouseWheelZoom": true,
-    "python.dataScience.maxOutputSize": 500,
     "editor.minimap.enabled": false,
     "python.linting.pylintArgs": [
         "--extension-pkg-whitelist=PyQt5"
@@ -107,7 +105,8 @@
     // jedi path error ???don know why????????
     // "markdownlint.run": "onSave",
     // jedi is good ;jediEnable:True
-    "python.jediEnabled": true,
+    // "python.jediEnabled": true,
+    // pylance?
     // tag: add vscode setting here
     "leetcode.endpoint": "leetcode-cn",
     "leetcode.defaultLanguage": "python3",
@@ -192,8 +191,6 @@
     // "dart.flutterSdkPath": "C:\\flutter",
     "dart.flutterCreateAndroidLanguage": "kotlin",
     "workbench.iconTheme": "vscode-icons",
-    "breadcrumbs.enabled": false,
-    "breadcrumbs.symbolPath": "off",
     // customized syntax color
     "editor.glyphMargin": true, // 编辑器侧边(断点)部分
     "workbench.tree.renderIndentGuides": "always",
@@ -293,5 +290,22 @@
     "http.proxySupport": "off",
     "[python]": {
         "editor.quickSuggestions": true,
-    }
+    },
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "jupyter.maxOutputSize": 500,
+    "python.languageServer": "Pylance",
+    "http.proxy": "http://127.0.0.1:8118",
+    "python.jediPath": "/usr/lib/python3/dist-packages",
+    "editor.showFoldingControls": "always",
+    "editor.unfoldOnClickAfterEndOfLine": true,
+    "editor.wordWrapColumn": 120,
+    "editor.suggest.showStatusBar": true,
+    "python.analysis.completeFunctionParens": true,
+    "markdown.preview.breaks": true,
+    "markdown.preview.fontSize": 18
 }
