@@ -320,5 +320,6 @@
     ],
     "markdown.extension.toc.unorderedList.marker": "*",
     "editor.acceptSuggestionOnEnter": "off",
-    "editor.suggest.shareSuggestSelections": true
+    "editor.suggest.shareSuggestSelections": true,
+    "alignment.operatorPadding ": "right"
 }

@@ -1,6 +1,11 @@
 // 将按键绑定配置放入此文件中即可覆盖默认值
 [
     {
+        "key": "ctrl+alt+=",
+        "command": "wwm.aligncode",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
         "key": "ctrl+shift+oem_plus",
         "command": "editor.action.fontZoomIn"
     },
