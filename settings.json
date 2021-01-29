@@ -295,12 +295,7 @@
         "editor.wordWrap": "on",
         "editor.quickSuggestions": true
     },
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": [],
     "jupyter.maxOutputSize": 500,
     "python.languageServer": "Pylance",
     "http.proxy": "http://127.0.0.1:8118",

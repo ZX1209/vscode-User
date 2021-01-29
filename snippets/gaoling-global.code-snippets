@@ -434,7 +434,7 @@
             "    # datas",
             "    ",
             "    test = Solution()",
-            "    print(test.func())"
+            "    print(test.${1:func()})"
         ]
     },
     "python arg parser start": {
