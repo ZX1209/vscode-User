@@ -316,5 +316,7 @@
     "markdown.extension.toc.unorderedList.marker": "*",
     "editor.acceptSuggestionOnEnter": "off",
     "editor.suggest.shareSuggestSelections": true,
-    "alignment.operatorPadding ": "right"
+    "alignment.operatorPadding ": "right",
+    "dart.previewLsp": true,
+    "jupyter.askForKernelRestart": false
 }
