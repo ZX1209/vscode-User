@@ -254,5 +254,15 @@
         "key": "ctrl+alt+v",
         "command": "-extension.pasteImage",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+z",
+        "command": "telesoho.MarkdownPaste",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+v",
+        "command": "-telesoho.MarkdownPaste",
+        "when": "editorTextFocus"
     }
 ]

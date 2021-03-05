@@ -250,7 +250,6 @@
         "razor": "html",
         "plaintext": "jade"
     },
-    "vsicons.presets.hideFolders": true,
     "dart.openDevTools": "flutter",
     // "workbench.preferredDarkColorTheme": "One Monokai",
     // "python.dataScience.sendSelectionToInteractiveWindow": false,
@@ -318,5 +317,27 @@
     "editor.suggest.shareSuggestSelections": true,
     "alignment.operatorPadding ": "right",
     "dart.previewLsp": true,
-    "jupyter.askForKernelRestart": false
+    "jupyter.askForKernelRestart": false,
+    "pasteImage.path": "${currentFileDir}/../Resources/${currentFileNameWithoutExt}/",
+    "MarkdownPaste.path": "${currentFileDir}/../Resources/${fileBasenameNoExtension}/",
+    "maptz.regionfolder": {
+        //     "[ahk]": {                                      //Language selector
+        //         "foldEnd": "; #endregion",                    //Text inserted at the end of the fold
+        //         "foldEndRegex": ";[\\s]*#endregion",          //Regex used to find fold end text.
+        //         "foldStart": "; #region [NAME]",              //Text inserted at the start of the fold.
+        //                                                     //Use the `[NAME]` placeholder to indicate
+        //                                                     //where the cursor should be placed after
+        //                                                     //insertion
+        //         "foldStartRegex": ";[\\s]*#region[\\s]*(.*)"  ////Regex used to find fold start text.
+        //         "disableFolding": false //Turn off #region folding for this language
+        // }
+        "[python]": { //Language selector
+            "foldStart": "; #start_region [NAME]", //Text inserted at the start of the fold.
+            "foldEnd": "; #end_region [NAME]", //Text inserted at the end of the fold
+            "foldEndRegex": ";[\\s]*#end_region", //Regex used to find fold end text.
+            "foldStartRegex": ";[\\s]*#start_region[\\s]*(.*)" ////Regex used to find fold start text.
+        }
+    },
+    "workbench.tree.indent": 16,
+    "explorer.compactFolders": false
 }
