@@ -11,7 +11,7 @@
     // "terminal.integrated.shell.windows": "C:\\Windows\\System32\\bash.exe",
     // "python.pythonPath": "C:\\Python37\\python.exe",
     "python.pythonPath": "/usr/bin/python3.7",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "files.eol": "\n",
     "workbench.statusBar.visible": true,
     "workbench.activityBar.visible": false, //最左边的导航?栏 文件 扩展
@@ -190,7 +190,7 @@
     "python.linting.pylintEnabled": false,
     // "dart.flutterSdkPath": "C:\\flutter",
     "dart.flutterCreateAndroidLanguage": "kotlin",
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": "material-icon-theme",
     // customized syntax color
     "editor.glyphMargin": true, // 编辑器侧边(断点)部分
     "workbench.tree.renderIndentGuides": "always",
@@ -294,7 +294,12 @@
         "editor.wordWrap": "on",
         "editor.quickSuggestions": true
     },
-    "workbench.editorAssociations": [],
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
     "jupyter.maxOutputSize": 500,
     "python.languageServer": "Pylance",
     "http.proxy": "http://127.0.0.1:8118",
@@ -339,5 +344,8 @@
         }
     },
     "workbench.tree.indent": 16,
-    "explorer.compactFolders": false
+    "explorer.compactFolders": false,
+    "material-icon-theme.folders.theme": "classic",
+    "material-icon-theme.hidesExplorerArrows": true,
+    "material-icon-theme.folders.color": "#FA8C35"
 }
