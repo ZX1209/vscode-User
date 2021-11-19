@@ -7,6 +7,14 @@
     ],
     "description": "Log output to console"
   },
+  "script main": {
+    "prefix": "imain",
+    "body": [
+      "if __name__ == \"__main__\":",
+      "    $1(main())"
+    ],
+    "description": "Log output to console"
+  },
   "file python start": {
     "prefix": "fps",
     "body": [

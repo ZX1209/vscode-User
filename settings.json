@@ -11,7 +11,6 @@
     // "terminal.integrated.shell.windows": "C:\\Windows\\System32\\bash.exe",
     // "python.pythonPath": "C:\\Python37\\python.exe",
     "python.pythonPath": "/usr/bin/python3.7",
-    "window.zoomLevel": 1,
     "files.eol": "\n",
     "workbench.statusBar.visible": true,
     "workbench.activityBar.visible": false, //最左边的导航?栏 文件 扩展
@@ -44,8 +43,8 @@
     "todo-tree.regex.regexCaseSensitive": false,
     "todo-tree.tree.showInExplorer": true,
     "todo-tree.highlights.defaultHighlight": {
-        "foreground": "white",
-        "background": "yellow",
+        "foreground": "yellow",
+        // "background": "#ffff0055",
         "icon": "check",
         "rulerColour": "yellow",
         "type": "tag",
@@ -84,15 +83,18 @@
         }
     },
     "files.associations": {
-        "*.json": "jsonc"
+        "*.json": "jsonc",
+        // "*.drawio": "drawio"
     },
     "editor.cursorSmoothCaretAnimation": true,
     "editor.cursorBlinking": "solid",
     "window.menuBarVisibility": "default",
     "python.linting.pycodestyleCategorySeverity.W": "Error",
     "python.linting.flake8CategorySeverity.W": "Error",
-    "editor.fontFamily": "Roboto Mono",
-    "editor.quickSuggestionsDelay": 100,
+    "editor.fontFamily": "'JetBrains Mono','Sarasa Gothic SC'",
+    // JetBrains Mono,Sarasa Mono SC,YaHei Consolas Hybrid,
+    // Monaco,Source Code Pro,Source Han Sans CN,M+ 1M
+    "editor.quickSuggestionsDelay": 160,
     "editor.cursorWidth": 3,
     "editor.hover.delay": 100,
     "git.autofetch": true,
@@ -100,7 +102,7 @@
     // "python.dataScience.changeDirOnImportExport": false,
     // "python.dataScience.showJupyterVariableExplorer": false,
     // "python.dataScience.useDefaultConfigForJupyter": false,
-    "python.formatting.provider": "black",
+    "python.formatting.provider": "yapf",
     // "python.jediPath": "/home/gl/.local/lib/python3.7/site-packages",
     // jedi path error ???don know why????????
     // "markdownlint.run": "onSave",
@@ -161,33 +163,6 @@
         "editor.findMatchBorder": "#FF7042",
         "selection.background": "#FF704240"
     },
-    // customiz color theme above
-    // "editor.tokenColorCustomizations": {
-    //     // "functions": "#FF0000",
-    //     // "comments": "#FF0000",
-    //     "variables": "#FF0000",
-    //     // "types": "#FF0000",
-    //     // "textMateRules": [],
-    //     // "strings": "#FF0000",
-    //     // "numbers": "#FF0000",
-    //     "keywords": "#ff5e00",
-    //     "textMateRules": [
-    //         {
-    //             "scope": "entity.name.type.class.python",
-    //             "settings": {
-    //                 "foreground": "#FF0000",
-    //                 "fontStyle": ""
-    //             }
-    //         },
-    //         {
-    //             "scope": "support.variable.magic.python",
-    //             "settings": {
-    //                 "foreground": "#ffffff"
-    //             }
-    //         }
-    //     ]
-    // },
-    "python.linting.pylintEnabled": false,
     // "dart.flutterSdkPath": "C:\\flutter",
     "dart.flutterCreateAndroidLanguage": "kotlin",
     "workbench.iconTheme": "material-icon-theme",
@@ -213,7 +188,7 @@
             "filename": "leetcode-${id}-${name}-${tag}-${difficulty}.${ext}"
         }
     },
-    "leetcode.workspaceFolder": "/home/gl/Projects/algorithm-practise/gl-algorithm-practise/leetcode-gl-python/",
+    "leetcode.workspaceFolder": "/home/gl/gl_home/projects/1-long_term_projects/algorithm-practise/gl-algorithm-practise/leetcode-gl-python/",
     "leetcode.hint.configWebviewMarkdown": false,
     // "leetcode.showCommentDescription": true,
     "leetcode.hint.commandShortcut": false,
@@ -254,62 +229,68 @@
     // "workbench.preferredDarkColorTheme": "One Monokai",
     // "python.dataScience.sendSelectionToInteractiveWindow": false,
     "explorer.confirmDragAndDrop": false,
-    "hediet.vscode-drawio.local-storage": {
-        ".drawio-config": {
-            "language": "",
-            "customFonts": [],
-            "libraries": "general;uml;er;bpmn;flowchart;basic;arrows2",
-            "customLibraries": [
-                "L.scratchpad"
-            ],
-            "plugins": [],
-            "recentColors": [],
-            "formatWidth": 240,
-            "createTarget": false,
-            "pageFormat": {
-                "x": 0,
-                "y": 0,
-                "width": 827,
-                "height": 1169
-            },
-            "search": true,
-            "showStartScreen": true,
-            "gridColor": "#d0d0d0",
-            "darkGridColor": "#6e6e6e",
-            "autosave": true,
-            "resizeImages": null,
-            "openCounter": 0,
-            "version": 18,
-            "unit": 1,
-            "isRulerOn": false,
-            "ui": ""
-        }
-    },
+    "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWw7dW1sO2VyO2JwbW47Zmxvd2NoYXJ0O2Jhc2ljO2Fycm93czJcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltdLFwiZm9ybWF0V2lkdGhcIjoyNDAsXCJjcmVhdGVUYXJnZXRcIjpmYWxzZSxcInBhZ2VGb3JtYXRcIjp7XCJ4XCI6MCxcInlcIjowLFwid2lkdGhcIjo4MjcsXCJoZWlnaHRcIjoxMTY5fSxcInNlYXJjaFwiOnRydWUsXCJzaG93U3RhcnRTY3JlZW5cIjp0cnVlLFwiZ3JpZENvbG9yXCI6XCIjZDBkMGQwXCIsXCJkYXJrR3JpZENvbG9yXCI6XCIjNmU2ZTZlXCIsXCJhdXRvc2F2ZVwiOnRydWUsXCJyZXNpemVJbWFnZXNcIjpudWxsLFwib3BlbkNvdW50ZXJcIjowLFwidmVyc2lvblwiOjE4LFwidW5pdFwiOjEsXCJpc1J1bGVyT25cIjpmYWxzZSxcInVpXCI6XCJcIn0ifQ==",
     "python.formatting.blackPath": "/home/gl/.local/bin/black",
-    "http.proxySupport": "off",
+    "http.proxySupport": "on",
     "[python]": {
+        "editor.autoIndent": "full",
         "editor.quickSuggestions": true,
     },
     "[markdown]": {
         "editor.wordWrap": "on",
-        "editor.quickSuggestions": true
+        "editor.wordWrapColumn": 80,
+        "editor.quickSuggestions": true,
+        "editor.fontFamily": "Sarasa Gothic SC",
     },
-    "workbench.editorAssociations": [
+    "latex-workshop.latex.recipes": [
         {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
+            "name": "xelatex",
+            "tools": [
+                "xelatex"
+            ]
+        }
+        // {
+        //     "name": "xelatex->bibtex->exlatex*2",
+        //     "tools": [
+        //         "xelatex",
+        //         "bibtex",
+        //         "xelatex",
+        //         "xelatex"
+        //     ]
+        // }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
         }
     ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb",
+        // "*.png": "hediet.vscode-drawio"
+        // "*.svg": "hediet.vscode-drawio-text",
+    },
     "jupyter.maxOutputSize": 500,
-    "python.languageServer": "Pylance",
     "http.proxy": "http://127.0.0.1:8118",
-    "python.jediPath": "/usr/lib/python3/dist-packages",
+    "python.jediPath": "/usr/lib/python3/dist-packages/",
     "editor.showFoldingControls": "always",
     "editor.unfoldOnClickAfterEndOfLine": true,
     "editor.wordWrapColumn": 120,
     "editor.suggest.showStatusBar": true,
     "python.analysis.completeFunctionParens": true,
-    "markdown.preview.breaks": true,
     "markdown.preview.fontSize": 18,
     "editor.quickSuggestions": true,
     "editor.rulers": [
@@ -318,7 +299,6 @@
         120
     ],
     "markdown.extension.toc.unorderedList.marker": "*",
-    "editor.acceptSuggestionOnEnter": "off",
     "editor.suggest.shareSuggestSelections": true,
     "alignment.operatorPadding ": "right",
     "dart.previewLsp": true,
@@ -347,5 +327,52 @@
     "explorer.compactFolders": false,
     "material-icon-theme.folders.theme": "classic",
     "material-icon-theme.hidesExplorerArrows": true,
-    "material-icon-theme.folders.color": "#FA8C35"
+    "material-icon-theme.folders.color": "#FA8C35",
+    "python.languageServer": "Pylance",
+    "rainbow_csv.comment_prefix": "#",
+    "autoAlign.enabled": {
+        "csv": false,
+        "bsv": true
+    },
+    "vsicons.dontShowNewVersionMessage": true,
+    "autoAlign.endingSeparator": true,
+    "rainbow_csv.csv_lint_detect_trailing_spaces": true,
+    "window.zoomLevel": 1,
+    "python.defaultInterpreterPath": "/usr/bin/python3.7",
+    "hediet.vscode-drawio.codeLinkActivated": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.bracketPairColorization.enabled": true,
+    "leetcode.hint.commentDescription": false,
+    "editor.wordWrap": "on",
+    "diffEditor.wordWrap": "on",
+    "editor.wrappingIndent": "deepIndent",
+    "workbench.editor.pinnedTabSizing": "shrink",
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.editor.tabCloseButton": "off",
+    "notebook.lineNumbers": "on",
+    "notebook.compactView": false,
+    "jupyter.magicCommandsAsComments": true,
+    "jupyter.widgetScriptSources": [
+        "jsdelivr.com",
+        "unpkg.com"
+    ],
+    "latex-workshop.bibtex-format.tab": "4 spaces",
+    "latex-workshop.intellisense.file.base": "file relative",
+    "latex-workshop.view.pdf.trim": 3,
+    "latex-workshop.latexindent.args": [
+        "-c",
+        "%DIR%/",
+        "%TMPFILE%"
+    ],
+    "redhat.telemetry.enabled": false,
+    "editor.guides.bracketPairs": true,
+    "mdmath.outerspace": true,
+    "latex-workshop.chktex.enabled": true,
+    "latex-workshop.synctex.afterBuild.enabled": true,
+    "[latex]": {
+        "editor.defaultFormatter": "James-Yu.latex-workshop"
+    },
+    "editor.tabSize": 2,
+    "python.linting.pydocstyleEnabled": true,
+    "latex-workshop.latex.autoBuild.run": "onSave"
 }

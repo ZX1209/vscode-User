@@ -1,0 +1,39 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "echo",
+            "type": "shell",
+            "command": "echo Hello"
+        },
+        {
+            "label": "compile c",
+            "type": "shell",
+            "command": [
+                "cpp"
+            ]
+        },
+        {
+            "label": "clang build active file", //任务的名字，就是刚才在命令面板中选择的时候所看到的，可以自己设置
+            "type": "shell",
+            "command": [
+                "clang",
+                "-g", //添加gdb调试选项
+                "${file}",
+                "-o", //指定生成可执行文件的名称
+                "${fileDirname}/${fileBasenameNoExtension}.exe",
+                "-lm",
+                "-lpng"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true //表示快捷键Ctrl+Shift+B可以运行该任务
+            }
+        }
+    ]
+}
